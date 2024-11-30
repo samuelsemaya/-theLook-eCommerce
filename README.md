@@ -50,22 +50,22 @@ ORDER BY
 
 * Menjumlahkan harga jual (retail_price) dari setiap produk yang terjual untuk mendapatkan total pendapatan per produk per bulan.
   
-6. FROM bigquery-public-data.thelook_ecommerce.order_items AS oi:
+5. FROM bigquery-public-data.thelook_ecommerce.order_items AS oi:
 
 * Mengambil data dari tabel order_items dengan alias oi.
   
-7. **JOIN bigquery-public-data.thelook_ecommerce.products AS p ON oi.product_id = p.id**:
+6. **JOIN bigquery-public-data.thelook_ecommerce.products AS p ON oi.product_id = p.id**:
 
 * Menggabungkan tabel order_items dan products berdasarkan product_id.
   
-8. **WHERE oi.status = 'Complete'**:
+7. **WHERE oi.status = 'Complete'**:
 
 * Memfilter hanya pesanan dengan status 'Complete' yang di ambil. Selain itu, tidak di ambil.
   
-9. **GROUP BY year_month, product_id, product_name, category, brand**:
+8. **GROUP BY year_month, product_id, product_name, category, brand**:
 
 * Mengelompokkan data berdasarkan bulan-tahun dan detail produk untuk melakukan agregasi pada total_items_sold dan total_revenue.
   
-10. **ORDER BY year_month, total_revenue DESC**:
+9. **ORDER BY year_month, total_revenue DESC**:
 
 * Mengurutkan hasil akhir berdasarkan year_month dan kemudian total_revenue paling besar.
