@@ -33,9 +33,7 @@ ORDER BY
 ```
 
 **Dataset :**
-[https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-eco
-mmerce?project=cool-benefit-286000](https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-eco
-mmerce?project=cool-benefit-286000)
+[https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-ecommerce?project=cool-benefit-286000](https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-ecommerce?project=cool-benefit-286000)
 
 # Penjelasan
 1. **WITH report_monthly_orders_product_agg AS (...)**:
